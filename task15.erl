@@ -5,7 +5,7 @@ multidouble([], _)->
     [];
 multidouble([H | T], N) ->
     task7:flatten([duplicate(N, H) | multidouble(T, N)]).
-
+%% флатен зайвий - спробуйте без нього
 
 duplicate(0, _) -> [];
-duplicate(N, H) when N > 0 -> [H | duplicate(N - 1, H)].
+duplicate(N, H) when N > 0 -> [H | duplicate(N - 1, H)]. %% нехвостова рекурсія - спробуйте переписати

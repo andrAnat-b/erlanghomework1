@@ -16,7 +16,7 @@ in_list(X, [_ | T]) ->
 del_duplicates(X) -> del_duplicates(X, []).
 
 del_duplicates([], Temp) -> task6:reversefunc(Temp);
-del_duplicates([H | T], Temp) ->
+del_duplicates([H | T], Temp) -> % Можна значно простіше - подумайте
     case in_list(H, Temp) of 
     true -> 
         del_duplicates(T, Temp);

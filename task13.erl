@@ -19,3 +19,5 @@ workwithnumbers(Element, 1) ->
     Element;
 workwithnumbers(Element, Count) -> 
     [Count, Element].
+
+    %% спробуйте спростити

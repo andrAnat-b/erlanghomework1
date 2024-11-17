@@ -7,5 +7,5 @@ numbers(WorkList)->
 
 usenumbers([])->
     [];
-usenumbers([[H | T] | A]) ->
+usenumbers([[H | T] | A]) -> % нехвостова рекурсія - спробуйте переробити
     [[task2:sizeoflist([H | T]) , H] | usenumbers(A)].

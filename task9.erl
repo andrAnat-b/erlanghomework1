@@ -4,7 +4,7 @@
 
 repeating([]) ->
     [];
-repeating([H | T]) ->
+repeating([H | T]) -> %% нехвостова рекурсія і  додачу можна простіше - подумайте
     {Repeated, Tail} = smallgroup(H, T, [H]),
     [Repeated | repeating(Tail)].
 
