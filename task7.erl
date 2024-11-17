@@ -3,7 +3,7 @@
 
 flatten([]) ->
     [];
-flatten([H | T]) when is_list(H) ->
+flatten([H | T]) when is_list(H) -> %% перепишіть на хвостову рекурсію. 
     flatten(H) ++ flatten(T);
 flatten ([H | T]) ->
     [H | flatten(T)].
