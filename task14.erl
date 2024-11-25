@@ -8,4 +8,4 @@ double([H | T]) ->
 
 
 duplicate(0, _) -> [];
-duplicate(N, H) when N > 0 -> [H | duplicate(N - 1, H)].
+duplicate(N, H) when N > 0 -> [H | duplicate(N - 1, H)]. %% перепишіть із використанням хвостової рекурсії

@@ -4,4 +4,4 @@
 sizeoflist([]) -> 0;
 
 sizeoflist([_ | T]) -> 1+
-    sizeoflist(T).
+    sizeoflist(T). %% перепишіть із використанням хвостової рекурсії

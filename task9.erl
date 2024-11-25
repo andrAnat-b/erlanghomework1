@@ -6,7 +6,7 @@ repeating([]) ->
     [];
 repeating([H | T]) ->
     {Repeated, Tail} = smallgroup(H, T, [H]),
-    [Repeated | repeating(Tail)].
+    [Repeated | repeating(Tail)]. %% перепишіть із використанням хвостової рекурсії
 
 smallgroup(_, [], Temp2) ->
     {task6:reversefunc(Temp2), []};

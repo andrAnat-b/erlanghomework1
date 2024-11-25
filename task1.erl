@@ -15,5 +15,5 @@ prelast([_ | T]) ->
 
 klist(1, [T | _]) -> T;
 
-klist(K, [_ | T]) when K>1 ->
+klist(K, [_ | T]) when K>1 -> %% навіщо тут охоронний вираз?
     klist( K-1, T).

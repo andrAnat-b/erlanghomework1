@@ -8,4 +8,4 @@ numbers(WorkList)->
 usenumbers([])->
     [];
 usenumbers([[H | T] | A]) ->
-    [[task2:sizeoflist([H | T]) , H] | usenumbers(A)].
+    [[task2:sizeoflist([H | T]) , H] | usenumbers(A)]. %% перепишіть із використанням хвостової рекурсії

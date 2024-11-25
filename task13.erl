@@ -9,7 +9,7 @@ numbers([H|T]) ->
 numbers([], WorkNum, Count, Temp) ->
     task6:reversefunc([workwithnumbers(WorkNum, Count) | Temp]);
 
-numbers([H|T], WorkNum, Count, Temp) when H =:= WorkNum ->
+numbers([H|T], WorkNum, Count, Temp) when H =:= WorkNum -> %% перепишіть без використання охоронного виразу
     numbers(T, WorkNum, Count + 1, Temp);
 
 numbers([H|T], WorkNum, Count, Temp) ->

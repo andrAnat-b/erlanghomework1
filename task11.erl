@@ -11,4 +11,4 @@ usenumbers([[H | T] | A]) ->
     case task2:sizeoflist([H | T]) of
     1 -> [H | usenumbers(A)];
     N -> [[N , H] | usenumbers(A)]
-    end.
+    end. %% перепишіть із використанням хвостової рекурсії і без використання блоку case 

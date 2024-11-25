@@ -17,7 +17,7 @@ del_duplicates(X) -> del_duplicates(X, []).
 
 del_duplicates([], Temp) -> task6:reversefunc(Temp);
 del_duplicates([H | T], Temp) ->
-    case in_list(H, Temp) of 
+    case in_list(H, Temp) of %% перепишіть без використання функції in_list/2
     true -> 
         del_duplicates(T, Temp);
     false -> 
